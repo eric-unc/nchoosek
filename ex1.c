@@ -9,18 +9,17 @@ int main(){
 		int n;
 		int k;
 
-		printf("n: ");
+		//printf("n: ");
 		scanf("%X", &n);
-		printf("k: ");
+		//printf("k: ");
 		scanf("%X", &k);
 
-		if(n == 0 || k == 0)
+		if(n == 0/* || k == 0*/)
 			return EXIT_SUCCESS;
 
-		printf("nCk: %i\n", nchoosek(n, k));
+		//printf("nCk: %i\n", nchoosek(n, k));
+		printf("%i\n", nchoosek(n, k));
 	}
-
-	return EXIT_SUCCESS;
 }
 
 uint32_t nchoosek(uint32_t n, uint32_t k){
